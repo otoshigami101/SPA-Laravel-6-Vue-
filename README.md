@@ -6,11 +6,11 @@ This is a simple template single page app laravel+Vue
 ```
 composer install
 ```
-# linux/MacOS
+### linux/MacOS
 ```
 mv .env.example .env
 ```
-# windows
+### windows
 ```
 rename .env.example .env
 ```
