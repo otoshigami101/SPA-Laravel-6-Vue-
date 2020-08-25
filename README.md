@@ -2,13 +2,12 @@
 
 This is a simple template single page app laravel+Vue for me (otoshigami)
 
-## laravel setup
+## Laravel setup
 ```
 composer install
 
-```
 php artisan key:generate
 
-## vue setup
+## Vue setup
 ```
 npm install
