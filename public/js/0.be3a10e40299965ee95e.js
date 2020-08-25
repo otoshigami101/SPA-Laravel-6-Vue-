@@ -12,7 +12,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, ".login[data-v-5b96cafc] {\n  background: #3490dc;\n  min-height: 100%;\n}\n.login__header[data-v-5b96cafc] {\n  border-radius: 16px 0 0 0;\n}\n.login__header__logo[data-v-5b96cafc] {\n  max-width: 48px;\n}\n.login__header__title[data-v-5b96cafc] {\n  text-align: center;\n  min-width: 200px;\n}\n.login__box[data-v-5b96cafc] {\n  border-radius: 0 0 16px 0;\n}", ""]);
+exports.push([module.i, ".login[data-v-5b96cafc] {\n  background: #3490dc;\n  min-height: 100%;\n}\n.login__header__logo-container[data-v-5b96cafc] {\n  border-radius: 16px 0 0 0;\n}\n.login__header__logo-container[data-v-5b96cafc]::after {\n  content: \"\";\n  position: absolute;\n  left: 0;\n  bottom: -25px;\n  border-right: 25px solid #fff;\n  border-bottom: 25px solid transparent;\n}\n.login__header__logo[data-v-5b96cafc] {\n  max-width: 48px;\n}\n.login__header__title[data-v-5b96cafc] {\n  text-align: center;\n  min-width: 200px;\n}\n.login__box[data-v-5b96cafc] {\n  border-radius: 0 0 16px 0;\n}", ""]);
 
 // exports
 
@@ -80,14 +80,23 @@ var staticRenderFns = [
       [
         _c(
           "div",
-          { staticClass: "d-flex align-items-end my-n2 position-relative" },
+          {
+            staticClass:
+              "login__header d-flex align-items-end my-n2 position-relative"
+          },
           [
-            _c("div", { staticClass: "login__header shadow-lg bg-white p-3" }, [
-              _c("img", {
-                staticClass: "login__header__logo",
-                attrs: { src: __webpack_require__(/*! @/img/logo.png */ "./resources/assets/img/logo.png"), alt: "company logo" }
-              })
-            ]),
+            _c(
+              "div",
+              {
+                staticClass: "login__header__logo-container shadow bg-white p-3"
+              },
+              [
+                _c("img", {
+                  staticClass: "login__header__logo",
+                  attrs: { src: __webpack_require__(/*! @/img/logo.png */ "./resources/assets/img/logo.png"), alt: "company logo" }
+                })
+              ]
+            ),
             _vm._v(" "),
             _c(
               "h1",
