@@ -1,6 +1,6 @@
 # Laravel + Vue SPA
 
-This is a simple template single page app laravel+Vue for me (otoshigami)
+This is a simple template single page app laravel+Vue
 
 ## Laravel setup
 ```
